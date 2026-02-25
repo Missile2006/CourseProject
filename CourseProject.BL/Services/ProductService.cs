@@ -5,6 +5,7 @@ using CourseProject.BL.Entities;
 using CourseProject.BL.Exceptions;
 using CourseProject.BL.Repositories;
 
+
 namespace CourseProject.BL.Services
 {
     public class ProductService
@@ -13,7 +14,6 @@ namespace CourseProject.BL.Services
         private readonly ICategoryRepository _categoryRepo;
         private readonly ISupplierRepository _supplierRepo;
 
-        // Словник дій для оновлення полів
         private readonly Dictionary<string, Action<Product, int>> _updateActions;
         private ProductRepository productRepo;
         private CategoryRepository categoryRepo;
